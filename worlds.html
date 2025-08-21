@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Worlds</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            a {
+                color: black; /* Change link color */
+                text-decoration: none; /* Remove underline */
+            }
+            .addons-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Default: 2 columns for mobile */
+                gap: 20px; /* Spacing between grid items */
+                padding: 20px;
+            }
+
+            /* Tablet: 3 columns */
+            @media (min-width: 600px) and (max-width: 1023px) {
+                .addons-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            /* Desktop: 4 columns */
+            @media (min-width: 1024px) {
+                .addons-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                background: #f8f9fa;
+            }
+
+            header, nav {
+                background: #333;
+                padding: 10px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            input[type="search"] {
+                width: 80%;
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            .addon {
+                background: white;
+                margin: 20px;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+
+            .addon img {
+                width: 100%;
+                border-radius: 6px;
+            }
+
+            .social-buttons button {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <input type="search" placeholder="Search for addons...">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://geraldpikel.github.io/Website/files.html">All</a></li>
+                <li><a href="addons.html">Addons</a></li>
+                <li><a href="texture_packs.html">Textures</a></li>
+                <li><a href="worlds.html">Worlds</a></li>
+                <li><a href="https://geraldpikel.github.io/Website/index.html">Main page</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="addons-grid">
+                <section class="addon"><a href="files/numberwood.mcpack" download="number_wood">
+                    <img src="images/minecraft_logo.png" alt="Don't punch trees!!">
+                    <h2>blank</h2>
+                    <p>By blank</p>
+                    <p>blanks</p>
+                </a></section>
+
+            </div>
+            <!-- Repeat section for other addons -->
+        </main>
+    </body>
+</html>

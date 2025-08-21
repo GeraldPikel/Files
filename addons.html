@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Addons</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            a {
+                color: black; /* Change link color */
+                text-decoration: none; /* Remove underline */
+            }
+            .addons-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Default: 2 columns for mobile */
+                gap: 20px; /* Spacing between grid items */
+                padding: 20px;
+            }
 
+            /* Tablet: 3 columns */
+            @media (min-width: 600px) and (max-width: 1023px) {
+                .addons-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            /* Desktop: 4 columns */
+            @media (min-width: 1024px) {
+                .addons-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                background: #f8f9fa;
+            }
+
+            header, nav {
+                background: #333;
+                padding: 10px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            input[type="search"] {
+                width: 80%;
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            .addon {
+                background: white;
+                margin: 20px;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+
+            .addon img {
+                width: 100%;
+                border-radius: 6px;
+            }
+
+            .social-buttons button {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <input type="search" placeholder="Search for addons...">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://geraldpikel.github.io/Website/files.html">All</a></li>
+                <li><a href="addons.html">Addons</a></li>
+                <li><a href="texture_packs.html">Textures</a></li>
+                <li><a href="worlds.html">Worlds</a></li>
+                <li><a href="https://geraldpikel.github.io/Website/index.html">Main page</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="addons-grid">
+                <section class="addon"><a href="zip_files/don't_punch_trees!!.zip" download="dont_punch_trees">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/minecraft_logo.png" alt="Don't punch trees!!">
+                    <h2>Don't punch trees!</h2>
+                    <p>By MemorieStudio</p>
+                    <p>Makes the game harder by making it so you have to make flint tools before wooden tools</p>
+                </a></section>
+
+                <section class="addon"><a href="https://mcpedl.com/better-on-bedrock/#downloads">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/bob.png" alt="BoB">
+                    <h2>Better on Bedrock</h2>
+                    <p>By Poggy</p>
+                    <p>Adds new items, tools, weapons, mobs, structures, biomes, and more!</p>
+                </a></section>
+
+                <section class="addon"><a href="files/FarmersDelightV4.0.5-1.21.90+.mcaddon" download="farmers_delight">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/farmer_delight.png" alt="Farmers delight">
+                    <h2>Farmers delight</h2>
+                    <p>By Moaswies</p>
+                    <p>Adds new foods to the game!</p>
+                </a></section>
+<section class="addon"><a href="zip_files/TSZA.zip" download="zombies_from_tsza">
+                    <img src="images/minecraft_logo.png" alt="TSZA">
+                    <h2>Zombies only from TSZA</h2>
+                    <p>By Four world studios</p>
+                    <p>Adds world! the zombies from TSZA to your qorld! </p></a> </section>
+                <section class="addon"><a href="files/End'sDelightV4.0.0-1.21.90+.mcaddon" download="ends_delight">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/end_delight.png" alt="ends delight">
+                    <h2>Ends delight</h2>
+                    <p>By Moaswies</p>
+                    <p>Adds new foods in the end!</p>
+                </a></section>
+
+                <section class="addon"><a href="zip_files/tough_as_nails.zip" download="tough_as_nails">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/minecraft_logo.png" alt="Tough as Nails">
+                    <h2>Tough as Nails (Bedrock)</h2>
+                    <p>By [Unknown]</p>
+                    <p>Adds temperature, thirst, new armor, and blocks to the game!</p>
+                </a></section>
+
+                <section class="addon"><a href="zip_files/true_weapons.zip" download="true_weapons">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/minecraft_logo.png" alt="True Weapons">
+                    <h2>True Weapons</h2>
+                    <p>By [Unknown]</p>
+                    <p>Adds new weapons to the game!</p>
+                </a> </section>
+                   <section class="addon"><a href="https://mcpedl.com/deadzone-add-on/" download="deadzone">
+                    <img src="https://github.com/GeraldPikel/Website/blob/53504b1cfb3c316a815c257f60743635b099465b/images/minecraft_logo.png" alt="Deadzone">
+                    <h2>Zombies Deadzone</h2>
+                    <p>By NekoZack</p>
+                    <p>Adds new weapons, vehicles, structures, armors, zombies, and more to the game! <strong>WARNING!</strong> DO NOT USE WITH TOUGH AS NAILS ADDON!</p>
+                </a> </section>
+                   <section class="addon"><a href=" " download="melon_mob">
+                    <img src="https://github.com/GeraldPikel/Website/blob/a8ace79d2863aec36c219835eb8d4a3430567982/images/face.jpg" alt="MelonMob">
+                    <h2>Melon Mob</h2>
+                    <p>By Gerald Pikel</p>
+                    <p>Adds a Melon Golem! Give it melon seeds and it'll farm melons for you :D don't forget to craft it using a melon and shears!</p>
+                </a> </section>
+            </div>
+            <!-- Repeat section for other addons -->
+        </main>
+    </body>
+</html>
